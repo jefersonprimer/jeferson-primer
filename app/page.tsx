@@ -103,10 +103,14 @@ export default function Home() {
         <h1 id="sobre" className="text-left font-bold text-2xl">Sobre mim:</h1>
         <div className="flex flex-col sm:flex-row mb-10 items-center sm:items-start justify-between">
           <p className="my-10 leading-7 sm:mr-10 text-base text-left max-w-2xl">
-            Tenho experiência como{' '}
-            <span className="text-yellow-600">Engenheiro de Software</span>.
-            <br /><br />
-            Sou <span className="text-yellow-600">otimista</span> e busco viver a vida aproveitando a jornada.
+            Sobre mim:
+            Tenho 3 anos de experiência profissional como Engenheiro de Software, trabalhando para empresas.
+
+            Sou otimista e busco viver a vida aproveitando a jornada.
+
+            Nascido e crescido em Rio grande do sul.
+
+            Em 2026 estou focando em meus projetos na internet, criando meu primeiro SAAS <a href="https://primerai.vercel.app/" alt="link primer ai" className="underline text-blue-400">Primer Ai</a>.
           </p>
           <div className="relative w-48 h-48 sm:w-64 sm:h-64 mt-4 sm:mt-0">
             <Image 
