@@ -9,16 +9,23 @@ export default function Home() {
 
   const experiences = [
     {
-      company: "Empresa 1",
+      company: "Nubank",
       role: "Software Engineer",
-      date: "DATA INICIO - DATA FIM",
-      description: "Descrição da atividade realizada na Empresa 1.",
+      date: "ABR 2025 - SET 2025",
+      descriptions: [
+        "Refatorei jobs de reconciliação de transações, reduzindo em 96% a quantidade de conexões ao nosso banco de dados.",
+        "Migrei os arquivos estáticos para outro bucket, garantindo zero downtime, controlado por rollout de desenvolvimento e segmentação de usuários específicos para testes controlados."
+      ],
+      techStack: "Tech Stack: Go, AWS, Kubernetes, etc."
     },
     {
       company: "Empresa 2",
-      role: "Frontend Developer",
+      role: "devops",
       date: "DATA INICIO - DATA FIM",
-      description: "Descrição da atividade realizada na Empresa 2.",
+      descriptions: [
+        "Descrição da atividade realizada na Empresa 2."
+      ],
+      techStack: "Tech Stack: Docker, Kubernetes, etc."
     },
   ];
 
@@ -147,12 +154,17 @@ export default function Home() {
               <span className="text-yellow-600">@ {experiences[activeTab].company}</span>
             </h2>
             <div className="text-gray-400 mb-6">{experiences[activeTab].date}</div>
-            <ul className="text-sm leading-7 space-y-4">
-              <li className="flex items-start text-gray-300">
-                <span className="text-yellow-600 mr-3">▸</span>
-                <span>{experiences[activeTab].description}</span>
-              </li>
+            <ul className="text-sm leading-7 space-y-4 max-w-2xl">
+              {experiences[activeTab].descriptions.map((desc, index) => (
+                <li key={index} className="flex items-start text-gray-300">
+                  <span className="text-yellow-600 mr-3">▸</span>
+                  <span>{desc}</span>
+                </li>
+              ))}
             </ul>
+             <div className="mt-4 text-sm text-gray-500">
+                {experiences[activeTab].techStack}
+             </div>
           </div>
         </div>
 
