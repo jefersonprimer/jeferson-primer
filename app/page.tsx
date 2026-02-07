@@ -9,14 +9,23 @@ export default function Home() {
 
   const experiences = [
     {
-      company: "Nubank",
-      role: "Software Engineer",
-      date: "ABR 2025 - SET 2025",
+      company:"Digifred",
+      role: "Desenvolvedor",
+      date: "FEV 2026 - MAI 2026",
       descriptions: [
-        "Refatorei jobs de reconciliação de transações, reduzindo em 96% a quantidade de conexões ao nosso banco de dados.",
-        "Migrei os arquivos estáticos para outro bucket, garantindo zero downtime, controlado por rollout de desenvolvimento e segmentação de usuários específicos para testes controlados."
+        "Área de Tributos – Desenvolvimento de Sistemas",
+        "Atuação no desenvolvimento e manutenção de sistemas da área de tributos",
+        "Desenvolvimento backend em PHP, utilizando Laravel e CodeIgniter",
+        "Desenvolvimento e manutenção de aplicações em Delphi 7 e Delphi Tokyo",
+        "Criação e manutenção de rotinas e tasks em PHP e Delphi",
+        "Refatoração de sistema legado em PHP, jQuery, HTML, CSS e MySQL 5",
+        "Migração de projeto legado para Laravel com PHP 8.2",
+        "Modernização do frontend utilizando Tailwind CSS v4, JavaScript e TypeScript",
+        "Modelagem, consultas e otimização de bancos de dados MySQL, MariaDB e Firebird",
+        "Correção de bugs, melhorias de performance e manutenção evolutiva de sistemas",
+        "Apoio na organização e melhoria da arquitetura de projetos existentes"
       ],
-      techStack: "Tech Stack: Go, AWS, Kubernetes, etc."
+      techStack: "Tech Stack: php, laravel, delphi, mysql, firebird, etc."
     },
     {
       company: "Empresa 2",
@@ -154,7 +163,7 @@ export default function Home() {
               <span className="text-yellow-600">@ {experiences[activeTab].company}</span>
             </h2>
             <div className="text-gray-400 mb-6">{experiences[activeTab].date}</div>
-            <ul className="text-sm leading-7 space-y-4 max-w-2xl">
+            <ul className="text-sm leading-7 space-y-1 max-w-2xl">
               {experiences[activeTab].descriptions.map((desc, index) => (
                 <li key={index} className="flex items-start text-gray-300">
                   <span className="text-yellow-600 mr-3">▸</span>
