@@ -126,7 +126,7 @@ export default function Home() {
 
             Nascido e crescido em Rio grande do sul.
 
-            Em 2026 estou focando em meus projetos na internet, criando meu primeiro SAAS <a href="https://primerai.vercel.app/" alt="link primer ai" className="underline text-blue-400">Primer Ai</a>.
+            Em 2026 estou focando em meus projetos na internet, criando meu primeiro SAAS <a href="https://primerai.vercel.app" className="underline text-blue-400">Primer Ai</a>.
           </p>
           <div className="relative w-48 h-48 sm:w-64 sm:h-64 mt-4 sm:mt-0">
             <Image 
